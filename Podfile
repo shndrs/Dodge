@@ -5,9 +5,9 @@ target 'Dodge' do
 
   use_frameworks!
 
-  pod 'Alamofire', '~> 4.0'
-  pod 'AlamofireImage', '~> 3.3'
-  pod 'AlamofireObjectMapper', '~> 4.0'
+  pod 'Alamofire'
+  pod 'AlamofireImage'
+  pod 'AlamofireObjectMapper'
   pod 'EZProgressHUD', '~> 1.5.3'
 
 end

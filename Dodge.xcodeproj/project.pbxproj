@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		F4E6FD0523C999F2005BA113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E6FD0323C999F2005BA113 /* Main.storyboard */; };
 		F4E6FD0723C999F5005BA113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E6FD0623C999F5005BA113 /* Assets.xcassets */; };
 		F4E6FD0A23C999F5005BA113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E6FD0823C999F5005BA113 /* LaunchScreen.storyboard */; };
+		F4E6FD1423C99F1A005BA113 /* CustomHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD1323C99F1A005BA113 /* CustomHUD.swift */; };
+		F4E6FD1623C99F71005BA113 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD1523C99F71005BA113 /* Font.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		F4E6FD0623C999F5005BA113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4E6FD0923C999F5005BA113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4E6FD0B23C999F5005BA113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4E6FD1323C99F1A005BA113 /* CustomHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHUD.swift; sourceTree = "<group>"; };
+		F4E6FD1523C99F71005BA113 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,6 @@
 				9E1A00F5D6E66315CBAFB0B5 /* Pods-Dodge.debug.xcconfig */,
 				BC0B49F56C6F497E59E50721 /* Pods-Dodge.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +84,7 @@
 		F4E6FCFC23C999F2005BA113 /* Dodge */ = {
 			isa = PBXGroup;
 			children = (
+				F4E6FD1123C99F00005BA113 /* Utills */,
 				F4E6FCFD23C999F2005BA113 /* AppDelegate.swift */,
 				F4E6FCFF23C999F2005BA113 /* SceneDelegate.swift */,
 				F4E6FD0123C999F2005BA113 /* ViewController.swift */,
@@ -90,6 +94,23 @@
 				F4E6FD0B23C999F5005BA113 /* Info.plist */,
 			);
 			path = Dodge;
+			sourceTree = "<group>";
+		};
+		F4E6FD1123C99F00005BA113 /* Utills */ = {
+			isa = PBXGroup;
+			children = (
+				F4E6FD1223C99F0D005BA113 /* Singleton */,
+				F4E6FD1523C99F71005BA113 /* Font.swift */,
+			);
+			path = Utills;
+			sourceTree = "<group>";
+		};
+		F4E6FD1223C99F0D005BA113 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				F4E6FD1323C99F1A005BA113 /* CustomHUD.swift */,
+			);
+			path = Singleton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +230,8 @@
 			files = (
 				F4E6FD0223C999F2005BA113 /* ViewController.swift in Sources */,
 				F4E6FCFE23C999F2005BA113 /* AppDelegate.swift in Sources */,
+				F4E6FD1623C99F71005BA113 /* Font.swift in Sources */,
+				F4E6FD1423C99F1A005BA113 /* CustomHUD.swift in Sources */,
 				F4E6FD0023C999F2005BA113 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
