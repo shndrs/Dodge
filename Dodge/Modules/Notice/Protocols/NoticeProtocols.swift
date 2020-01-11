@@ -20,7 +20,7 @@ protocol NoticePresenterProtocol: class {
 
 protocol PresenterToViewProtocol: class {
     
-    func showNotice(noticeArray:Array<NoticeModel>)
+    func showNotice(noticeArray: [NoticeModel])
     func showError()
 }
 

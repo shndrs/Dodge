@@ -29,7 +29,7 @@ extension NoticeInteractor {
             if(response.response?.statusCode == 200) {
                 
                 if let json = response.result.value as AnyObject? {
-                    let arrayResponse = json["movie_list"] as! NSArray
+                    let arrayResponse = json[Strings.movieList.rawValue] as! NSArray
                     let arrayObject = Mapper<NoticeModel>().mapArray(JSONArray: arrayResponse as! [[String : Any]]);
                     self?.presenter?.noticeFetchedSuccess(noticeModelArray: arrayObject)
                 }

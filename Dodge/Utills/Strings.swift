@@ -15,6 +15,7 @@ enum Strings: String {
     case ok = "Okay"
     case error = "Error"
     case errorFetchingData = "Problem Fetching Data"
+    case movieList = "movie_list"
     
     // MARK: - CustomHUD
     

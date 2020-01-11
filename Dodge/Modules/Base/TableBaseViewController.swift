@@ -16,7 +16,7 @@ class TableBaseViewController: UIViewController {
         }
     }
     
-    @IBOutlet internal weak var tableView: UITableView! {
+    @IBOutlet public weak var tableView: UITableView! {
         didSet {
             tableSetup()
         }

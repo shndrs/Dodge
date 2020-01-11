@@ -10,42 +10,11 @@ import UIKit
 
 final class NoticeVC: TableBaseViewController {
 
-    var presenter: NoticePresenterProtocol?
+    weak var presenter: NoticePresenterProtocol?
     
     private lazy var items: [NoticeModel] = {
         return [NoticeModel]()
     }()
-    
-}
-
-// MARK: - Life Cycle
-
-extension NoticeVC {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        largeTitle = true
-        title = Strings.notice.rawValue
-        HUD.default.show()
-        presenter?.startFetchingNotice()
-    }
-}
-
-// MARK: - View Implementation
-
-extension NoticeVC: PresenterToViewProtocol {
-    
-    func showNotice(noticeArray: Array<NoticeModel>) {
-        self.items = noticeArray
-        tableView.reloadData()
-        HUD.default.dismiss()
-    }
-    
-    func showError() {
-        HUD.default.dismiss()
-        Alert.show(title: Strings.error.rawValue,
-                   message: Strings.errorFetchingData.rawValue)
-    }
     
 }
 
@@ -58,6 +27,41 @@ extension NoticeVC {
         tableView.rowHeight = 80
         register(reuseIds: RIDs.noticeVC)
     }
+    
+    @objc private func fetch() {
+        HUD.default.show()
+        presenter?.startFetchingNotice()
+    }
+}
+
+// MARK: - Life Cycle
+
+extension NoticeVC {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        largeTitle = true
+        title = Strings.notice.rawValue
+        fetch()
+    }
+}
+
+// MARK: - View Implementation
+
+extension NoticeVC: PresenterToViewProtocol {
+    
+    func showNotice(noticeArray: [NoticeModel]) {
+        HUD.default.dismiss()
+        items = noticeArray
+        tableView.asyncReload()
+    }
+    
+    func showError() {
+        HUD.default.dismiss()
+        Alert.show(title: Strings.error.rawValue,
+                   message: Strings.errorFetchingData.rawValue)
+    }
+    
 }
 
 // MARK: - TableView Implementation
