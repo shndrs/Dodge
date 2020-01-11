@@ -25,17 +25,23 @@ extension NoticeInteractor {
         Alamofire.request(Routes.movieList).responseJSON { [weak self] response in
             
             guard self != nil else { return }
-            
-            if(response.response?.statusCode == 200) {
-                guard let json = response.result.value as AnyObject? else {
-                    self?.presenter?.noticeFetchFailed(); return
-                }
-                let arrayResponse = json[Strings.movieList.rawValue] as! NSArray
-                let arrayObject = Mapper<NoticeModel>().mapArray(JSONArray: arrayResponse as! [[String : Any]]);
-                self?.presenter?.noticeFetchedSuccess(noticeModelArray: arrayObject)
-            } else {
-                self?.presenter?.noticeFetchFailed()
+            self?.handel(response: response)
+        }
+    }
+    
+    private func handel(response: DataResponse<Any>) {
+        
+        switch response.response?.statusCode {
+        case 200:
+            guard let json = response.result.value as AnyObject? else {
+                self.presenter?.noticeFetchFailed(); return
             }
+            let arrayResponse = json[Strings.movieList.rawValue] as! NSArray
+            let arrayObject = Mapper<NoticeModel>()
+                .mapArray(JSONArray: arrayResponse as! [[String : Any]]);
+            self.presenter?.noticeFetchedSuccess(noticeModelArray: arrayObject)
+        default:
+            self.presenter?.noticeFetchFailed()
         }
     }
     
