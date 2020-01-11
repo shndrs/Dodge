@@ -8,14 +8,22 @@
 
 import UIKit
 
-final class NoticeCell: UITableViewCell {
+final class NoticeCell: UITableViewCell, ReusableView {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
+    @IBOutlet private weak var idLabel: LabelBold!
+    @IBOutlet private weak var titleLabel: LabelBold!
+    @IBOutlet private weak var briefLabel: LabelRegular!
+    @IBOutlet private weak var fileSourceLabel: LabelLight!
     
+}
+
+// MARK: - Methods
+
+extension NoticeCell {
+    public func fill(cell by: NoticeModel) {
+        idLabel.text = by.id
+        titleLabel.text = by.title
+        briefLabel.text = by.brief
+        fileSourceLabel.text = by.filesource
+    }
 }

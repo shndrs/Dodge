@@ -13,4 +13,8 @@ enum Strings: String {
     // MARK: - CustomHUD
     
     case hudTitle = "Please Wait..."
+    
+    // MARK: - Notice
+    
+    case notice = "Notice"
 }

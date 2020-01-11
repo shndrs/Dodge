@@ -28,6 +28,13 @@
 		F4E6FD3D23C9AF29005BA113 /* NoticeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD3C23C9AF29005BA113 /* NoticeProtocols.swift */; };
 		F4E6FD3F23C9AFA1005BA113 /* NoticePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD3E23C9AFA1005BA113 /* NoticePresenter.swift */; };
 		F4E6FD4123C9B348005BA113 /* NoticeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD4023C9B348005BA113 /* NoticeInteractor.swift */; };
+		F4E6FD4323C9B665005BA113 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD4223C9B665005BA113 /* ReusableView.swift */; };
+		F4E6FD4523C9B691005BA113 /* RIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD4423C9B691005BA113 /* RIDs.swift */; };
+		F4E6FD4923C9BAB2005BA113 /* LabelLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD4823C9BAB2005BA113 /* LabelLight.swift */; };
+		F4E6FD4B23C9BAD7005BA113 /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD4A23C9BAD7005BA113 /* BaseLabel.swift */; };
+		F4E6FD4D23C9BB0E005BA113 /* LabelBold.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD4C23C9BB0E005BA113 /* LabelBold.swift */; };
+		F4E6FD4F23C9BB29005BA113 /* LabelMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD4E23C9BB29005BA113 /* LabelMedium.swift */; };
+		F4E6FD5123C9BB4B005BA113 /* LabelRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD5023C9BB4B005BA113 /* LabelRegular.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +63,13 @@
 		F4E6FD3C23C9AF29005BA113 /* NoticeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeProtocols.swift; sourceTree = "<group>"; };
 		F4E6FD3E23C9AFA1005BA113 /* NoticePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePresenter.swift; sourceTree = "<group>"; };
 		F4E6FD4023C9B348005BA113 /* NoticeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeInteractor.swift; sourceTree = "<group>"; };
+		F4E6FD4223C9B665005BA113 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		F4E6FD4423C9B691005BA113 /* RIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIDs.swift; sourceTree = "<group>"; };
+		F4E6FD4823C9BAB2005BA113 /* LabelLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelLight.swift; sourceTree = "<group>"; };
+		F4E6FD4A23C9BAD7005BA113 /* BaseLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
+		F4E6FD4C23C9BB0E005BA113 /* LabelBold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelBold.swift; sourceTree = "<group>"; };
+		F4E6FD4E23C9BB29005BA113 /* LabelMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelMedium.swift; sourceTree = "<group>"; };
+		F4E6FD5023C9BB4B005BA113 /* LabelRegular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelRegular.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +134,7 @@
 		F4E6FD1123C99F00005BA113 /* Utills */ = {
 			isa = PBXGroup;
 			children = (
+				F4E6FD4623C9BA92005BA113 /* Components */,
 				F4E6FD3323C9AC0D005BA113 /* Extensions */,
 				F4E6FD1A23C9A093005BA113 /* Resources */,
 				F4E6FD1923C9A06D005BA113 /* Configuration */,
@@ -128,6 +143,8 @@
 				F4E6FD1723C99FE9005BA113 /* Strings.swift */,
 				F4E6FD2F23C9ABD0005BA113 /* Register.swift */,
 				F4E6FD3823C9AE12005BA113 /* Routes.swift */,
+				F4E6FD4223C9B665005BA113 /* ReusableView.swift */,
+				F4E6FD4423C9B691005BA113 /* RIDs.swift */,
 			);
 			path = Utills;
 			sourceTree = "<group>";
@@ -243,6 +260,26 @@
 				F4E6FD3423C9AC2A005BA113 /* UITableView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4E6FD4623C9BA92005BA113 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F4E6FD4723C9BAA8005BA113 /* Labels */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F4E6FD4723C9BAA8005BA113 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				F4E6FD4A23C9BAD7005BA113 /* BaseLabel.swift */,
+				F4E6FD4823C9BAB2005BA113 /* LabelLight.swift */,
+				F4E6FD5023C9BB4B005BA113 /* LabelRegular.swift */,
+				F4E6FD4E23C9BB29005BA113 /* LabelMedium.swift */,
+				F4E6FD4C23C9BB0E005BA113 /* LabelBold.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4E6FD3923C9AE12005BA113 /* Routes.swift in Sources */,
+				F4E6FD4323C9B665005BA113 /* ReusableView.swift in Sources */,
 				F4E6FCFE23C999F2005BA113 /* AppDelegate.swift in Sources */,
 				F4E6FD3223C9ABF2005BA113 /* TableBaseViewController.swift in Sources */,
 				F4E6FD1623C99F71005BA113 /* Font.swift in Sources */,
@@ -369,14 +407,20 @@
 				F4E6FD3723C9AD91005BA113 /* NoticeModel.swift in Sources */,
 				F4E6FD3523C9AC2A005BA113 /* UITableView.swift in Sources */,
 				F4E6FD3023C9ABD0005BA113 /* Register.swift in Sources */,
+				F4E6FD4B23C9BAD7005BA113 /* BaseLabel.swift in Sources */,
 				F4E6FD2B23C9AB50005BA113 /* NoticeVC.swift in Sources */,
+				F4E6FD4D23C9BB0E005BA113 /* LabelBold.swift in Sources */,
 				F4E6FD3F23C9AFA1005BA113 /* NoticePresenter.swift in Sources */,
+				F4E6FD5123C9BB4B005BA113 /* LabelRegular.swift in Sources */,
 				F4E6FD3D23C9AF29005BA113 /* NoticeProtocols.swift in Sources */,
+				F4E6FD4923C9BAB2005BA113 /* LabelLight.swift in Sources */,
 				F4E6FD2E23C9AB90005BA113 /* BaseViewController.swift in Sources */,
 				F4E6FD1823C99FE9005BA113 /* Strings.swift in Sources */,
+				F4E6FD4F23C9BB29005BA113 /* LabelMedium.swift in Sources */,
 				F4E6FD0023C999F2005BA113 /* SceneDelegate.swift in Sources */,
 				F4E6FD4123C9B348005BA113 /* NoticeInteractor.swift in Sources */,
 				F4E6FD2823C9AB13005BA113 /* NoticeCell.swift in Sources */,
+				F4E6FD4523C9B691005BA113 /* RIDs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

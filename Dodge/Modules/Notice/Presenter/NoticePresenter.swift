@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NoticePresenter: NoticePresenterProtocol {
+final class NoticePresenter: NoticePresenterProtocol {
     
     var view: PresenterToViewProtocol?
     var interactor: PresenterToInteractorProtocol?
