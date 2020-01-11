@@ -10,6 +10,12 @@ import Foundation
 
 enum Strings: String {
     
+    // MARK: - Common
+    
+    case ok = "Okay"
+    case error = "Error"
+    case errorFetchingData = "Problem Fetching Data"
+    
     // MARK: - CustomHUD
     
     case hudTitle = "Please Wait..."

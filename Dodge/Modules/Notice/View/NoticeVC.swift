@@ -43,9 +43,8 @@ extension NoticeVC: PresenterToViewProtocol {
     
     func showError() {
         HUD.default.dismiss()
-        let alert = UIAlertController(title: "Alert", message: "Problem Fetching Notice", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        Alert.show(title: Strings.error.rawValue,
+                   message: Strings.errorFetchingData.rawValue)
     }
     
 }

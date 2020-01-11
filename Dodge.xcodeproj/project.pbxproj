@@ -36,6 +36,8 @@
 		F4E6FD4F23C9BB29005BA113 /* LabelMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD4E23C9BB29005BA113 /* LabelMedium.swift */; };
 		F4E6FD5123C9BB4B005BA113 /* LabelRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD5023C9BB4B005BA113 /* LabelRegular.swift */; };
 		F4E6FD5323C9C288005BA113 /* NoticeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD5223C9C288005BA113 /* NoticeRouter.swift */; };
+		F4E6FD5623C9D3CD005BA113 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD5523C9D3CD005BA113 /* Alert.swift */; };
+		F4E6FD5823C9D519005BA113 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD5723C9D519005BA113 /* UIApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		F4E6FD4E23C9BB29005BA113 /* LabelMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelMedium.swift; sourceTree = "<group>"; };
 		F4E6FD5023C9BB4B005BA113 /* LabelRegular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelRegular.swift; sourceTree = "<group>"; };
 		F4E6FD5223C9C288005BA113 /* NoticeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeRouter.swift; sourceTree = "<group>"; };
+		F4E6FD5523C9D3CD005BA113 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		F4E6FD5723C9D519005BA113 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				F4E6FD3423C9AC2A005BA113 /* UITableView.swift */,
+				F4E6FD5723C9D519005BA113 /* UIApplication.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 		F4E6FD4623C9BA92005BA113 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F4E6FD5423C9D3BF005BA113 /* Alert */,
 				F4E6FD4723C9BAA8005BA113 /* Labels */,
 			);
 			path = Components;
@@ -283,6 +289,14 @@
 				F4E6FD4C23C9BB0E005BA113 /* LabelBold.swift */,
 			);
 			path = Labels;
+			sourceTree = "<group>";
+		};
+		F4E6FD5423C9D3BF005BA113 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				F4E6FD5523C9D3CD005BA113 /* Alert.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,9 +415,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E6FD5823C9D519005BA113 /* UIApplication.swift in Sources */,
 				F4E6FD3923C9AE12005BA113 /* Routes.swift in Sources */,
 				F4E6FD4323C9B665005BA113 /* ReusableView.swift in Sources */,
 				F4E6FCFE23C999F2005BA113 /* AppDelegate.swift in Sources */,
+				F4E6FD5623C9D3CD005BA113 /* Alert.swift in Sources */,
 				F4E6FD3223C9ABF2005BA113 /* TableBaseViewController.swift in Sources */,
 				F4E6FD1623C99F71005BA113 /* Font.swift in Sources */,
 				F4E6FD1423C99F1A005BA113 /* CustomHUD.swift in Sources */,
