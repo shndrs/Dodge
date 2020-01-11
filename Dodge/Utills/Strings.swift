@@ -17,4 +17,5 @@ enum Strings: String {
     // MARK: - Notice
     
     case notice = "Notice"
+    case noticeVC = "NoticeVC"
 }

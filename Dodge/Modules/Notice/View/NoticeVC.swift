@@ -37,7 +37,7 @@ extension NoticeVC: PresenterToViewProtocol {
     
     func showNotice(noticeArray: Array<NoticeModel>) {
         self.items = noticeArray
-        tableView.asyncReload() 
+        tableView.reloadData()
         HUD.default.dismiss()
     }
     
@@ -56,6 +56,7 @@ extension NoticeVC {
     override func tableSetup() {
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.rowHeight = 80
         register(reuseIds: RIDs.noticeVC)
     }
 }

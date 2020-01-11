@@ -8,6 +8,7 @@
 
 import Alamofire
 import ObjectMapper
+import AlamofireObjectMapper
 
 final class NoticeInteractor: PresenterToInteractorProtocol {
     
@@ -19,15 +20,16 @@ final class NoticeInteractor: PresenterToInteractorProtocol {
 
 extension NoticeInteractor {
     
-    func fetchNotice() {
-        Alamofire.request(Routes.noticeList).responseJSON { [weak self] response in
+    func fetchNotice() {   
+        
+        Alamofire.request(Routes.movieList).responseJSON { [weak self] response in
             
             guard self != nil else { return }
             
             if(response.response?.statusCode == 200) {
                 
                 if let json = response.result.value as AnyObject? {
-                    let arrayResponse = json["notice_list"] as! NSArray
+                    let arrayResponse = json["movie_list"] as! NSArray
                     let arrayObject = Mapper<NoticeModel>().mapArray(JSONArray: arrayResponse as! [[String : Any]]);
                     self?.presenter?.noticeFetchedSuccess(noticeModelArray: arrayObject)
                 }

@@ -35,6 +35,7 @@
 		F4E6FD4D23C9BB0E005BA113 /* LabelBold.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD4C23C9BB0E005BA113 /* LabelBold.swift */; };
 		F4E6FD4F23C9BB29005BA113 /* LabelMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD4E23C9BB29005BA113 /* LabelMedium.swift */; };
 		F4E6FD5123C9BB4B005BA113 /* LabelRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD5023C9BB4B005BA113 /* LabelRegular.swift */; };
+		F4E6FD5323C9C288005BA113 /* NoticeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD5223C9C288005BA113 /* NoticeRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		F4E6FD4C23C9BB0E005BA113 /* LabelBold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelBold.swift; sourceTree = "<group>"; };
 		F4E6FD4E23C9BB29005BA113 /* LabelMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelMedium.swift; sourceTree = "<group>"; };
 		F4E6FD5023C9BB4B005BA113 /* LabelRegular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelRegular.swift; sourceTree = "<group>"; };
+		F4E6FD5223C9C288005BA113 /* NoticeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 		F4E6FD2423C9AAB7005BA113 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				F4E6FD5223C9C288005BA113 /* NoticeRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				F4E6FD1423C99F1A005BA113 /* CustomHUD.swift in Sources */,
 				F4E6FD3723C9AD91005BA113 /* NoticeModel.swift in Sources */,
 				F4E6FD3523C9AC2A005BA113 /* UITableView.swift in Sources */,
+				F4E6FD5323C9C288005BA113 /* NoticeRouter.swift in Sources */,
 				F4E6FD3023C9ABD0005BA113 /* Register.swift in Sources */,
 				F4E6FD4B23C9BAD7005BA113 /* BaseLabel.swift in Sources */,
 				F4E6FD2B23C9AB50005BA113 /* NoticeVC.swift in Sources */,
