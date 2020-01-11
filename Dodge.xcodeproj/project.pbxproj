@@ -16,6 +16,7 @@
 		F4E6FD0A23C999F5005BA113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E6FD0823C999F5005BA113 /* LaunchScreen.storyboard */; };
 		F4E6FD1423C99F1A005BA113 /* CustomHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD1323C99F1A005BA113 /* CustomHUD.swift */; };
 		F4E6FD1623C99F71005BA113 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD1523C99F71005BA113 /* Font.swift */; };
+		F4E6FD1823C99FE9005BA113 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD1723C99FE9005BA113 /* Strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F4E6FD0B23C999F5005BA113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4E6FD1323C99F1A005BA113 /* CustomHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHUD.swift; sourceTree = "<group>"; };
 		F4E6FD1523C99F71005BA113 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		F4E6FD1723C99FE9005BA113 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,13 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				F4E6FD1123C99F00005BA113 /* Utills */,
-				F4E6FCFD23C999F2005BA113 /* AppDelegate.swift */,
-				F4E6FCFF23C999F2005BA113 /* SceneDelegate.swift */,
 				F4E6FD0123C999F2005BA113 /* ViewController.swift */,
 				F4E6FD0323C999F2005BA113 /* Main.storyboard */,
-				F4E6FD0623C999F5005BA113 /* Assets.xcassets */,
-				F4E6FD0823C999F5005BA113 /* LaunchScreen.storyboard */,
 				F4E6FD0B23C999F5005BA113 /* Info.plist */,
+				F4E6FD0823C999F5005BA113 /* LaunchScreen.storyboard */,
 			);
 			path = Dodge;
 			sourceTree = "<group>";
@@ -99,8 +98,11 @@
 		F4E6FD1123C99F00005BA113 /* Utills */ = {
 			isa = PBXGroup;
 			children = (
+				F4E6FD1A23C9A093005BA113 /* Resources */,
+				F4E6FD1923C9A06D005BA113 /* Configuration */,
 				F4E6FD1223C99F0D005BA113 /* Singleton */,
 				F4E6FD1523C99F71005BA113 /* Font.swift */,
+				F4E6FD1723C99FE9005BA113 /* Strings.swift */,
 			);
 			path = Utills;
 			sourceTree = "<group>";
@@ -111,6 +113,23 @@
 				F4E6FD1323C99F1A005BA113 /* CustomHUD.swift */,
 			);
 			path = Singleton;
+			sourceTree = "<group>";
+		};
+		F4E6FD1923C9A06D005BA113 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F4E6FCFD23C999F2005BA113 /* AppDelegate.swift */,
+				F4E6FCFF23C999F2005BA113 /* SceneDelegate.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		F4E6FD1A23C9A093005BA113 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4E6FD0623C999F5005BA113 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +251,7 @@
 				F4E6FCFE23C999F2005BA113 /* AppDelegate.swift in Sources */,
 				F4E6FD1623C99F71005BA113 /* Font.swift in Sources */,
 				F4E6FD1423C99F1A005BA113 /* CustomHUD.swift in Sources */,
+				F4E6FD1823C99FE9005BA113 /* Strings.swift in Sources */,
 				F4E6FD0023C999F2005BA113 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

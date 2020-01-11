@@ -21,7 +21,7 @@ class HUD: NSObject {
             option.thirdLayerStrokeColor = .gray
             option.strokeWidth = 2
             option.font = Font.light.return(size: 13)
-//            option.title = Strings.wait.rawValue
+            option.title = Strings.hudTitle.rawValue
             option.titleTextColor = .white
             option.transViewBackgroundColor = .black
             option.animationOption = EZAnimationOptions.hnk
