@@ -24,6 +24,8 @@
 		F4E6FD3023C9ABD0005BA113 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD2F23C9ABD0005BA113 /* Register.swift */; };
 		F4E6FD3223C9ABF2005BA113 /* TableBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD3123C9ABF2005BA113 /* TableBaseViewController.swift */; };
 		F4E6FD3523C9AC2A005BA113 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD3423C9AC2A005BA113 /* UITableView.swift */; };
+		F4E6FD3723C9AD91005BA113 /* NoticeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD3623C9AD91005BA113 /* NoticeModel.swift */; };
+		F4E6FD3923C9AE12005BA113 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD3823C9AE12005BA113 /* Routes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		F4E6FD2F23C9ABD0005BA113 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		F4E6FD3123C9ABF2005BA113 /* TableBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableBaseViewController.swift; sourceTree = "<group>"; };
 		F4E6FD3423C9AC2A005BA113 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		F4E6FD3623C9AD91005BA113 /* NoticeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeModel.swift; sourceTree = "<group>"; };
+		F4E6FD3823C9AE12005BA113 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 				F4E6FD1523C99F71005BA113 /* Font.swift */,
 				F4E6FD1723C99FE9005BA113 /* Strings.swift */,
 				F4E6FD2F23C9ABD0005BA113 /* Register.swift */,
+				F4E6FD3823C9AE12005BA113 /* Routes.swift */,
 			);
 			path = Utills;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 		F4E6FD2323C9AAA9005BA113 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				F4E6FD3623C9AD91005BA113 /* NoticeModel.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -350,10 +356,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4E6FD0223C999F2005BA113 /* ViewController.swift in Sources */,
+				F4E6FD3923C9AE12005BA113 /* Routes.swift in Sources */,
 				F4E6FCFE23C999F2005BA113 /* AppDelegate.swift in Sources */,
 				F4E6FD3223C9ABF2005BA113 /* TableBaseViewController.swift in Sources */,
 				F4E6FD1623C99F71005BA113 /* Font.swift in Sources */,
 				F4E6FD1423C99F1A005BA113 /* CustomHUD.swift in Sources */,
+				F4E6FD3723C9AD91005BA113 /* NoticeModel.swift in Sources */,
 				F4E6FD3523C9AC2A005BA113 /* UITableView.swift in Sources */,
 				F4E6FD3023C9ABD0005BA113 /* Register.swift in Sources */,
 				F4E6FD2B23C9AB50005BA113 /* NoticeVC.swift in Sources */,
