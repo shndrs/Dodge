@@ -1,0 +1,47 @@
+//
+//  UITableView.swift
+//  Dodge
+//
+//  Created by NP2 on 1/11/20.
+//  Copyright © 2020 shndrs. All rights reserved.
+//
+
+import UIKit
+
+extension UITableView {
+    
+    func asyncReload() {
+        DispatchQueue.main.async { [weak self] in
+            
+            guard self != nil else { return }
+            
+            self?.reloadData()
+        }
+    }
+    
+    func cleanFooterView() {
+        DispatchQueue.main.async { [weak self] in
+            
+            guard self != nil else { return }
+            
+            self?.tableFooterView?.backgroundColor = .clear
+            self?.tableFooterView = UIView(frame: CGRect(x: 0,
+                                                         y: 0,
+                                                         width: self?.frame.size.width ?? 0,
+                                                         height: 1))
+        }
+    }
+    
+    func asyncReload(in section: Int, rowAnimation:UITableView.RowAnimation = .fade) {
+        DispatchQueue.main.async { [weak self] in
+            
+            guard self != nil else { return }
+            
+            self?.beginUpdates()
+            self?.reloadSections(IndexSet(integer: section), with: rowAnimation)
+            self?.endUpdates()
+        }
+    }
+    
+}
+
