@@ -1,0 +1,6 @@
+framework module Pods_Dodge {
+  umbrella header "Pods-Dodge-umbrella.h"
+
+  export *
+  module * { export * }
+}
