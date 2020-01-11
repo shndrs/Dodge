@@ -27,12 +27,12 @@ extension NoticeInteractor {
             guard self != nil else { return }
             
             if(response.response?.statusCode == 200) {
-                
-                if let json = response.result.value as AnyObject? {
-                    let arrayResponse = json[Strings.movieList.rawValue] as! NSArray
-                    let arrayObject = Mapper<NoticeModel>().mapArray(JSONArray: arrayResponse as! [[String : Any]]);
-                    self?.presenter?.noticeFetchedSuccess(noticeModelArray: arrayObject)
+                guard let json = response.result.value as AnyObject? else {
+                    self?.presenter?.noticeFetchFailed(); return
                 }
+                let arrayResponse = json[Strings.movieList.rawValue] as! NSArray
+                let arrayObject = Mapper<NoticeModel>().mapArray(JSONArray: arrayResponse as! [[String : Any]]);
+                self?.presenter?.noticeFetchedSuccess(noticeModelArray: arrayObject)
             } else {
                 self?.presenter?.noticeFetchFailed()
             }

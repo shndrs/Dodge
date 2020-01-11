@@ -32,7 +32,7 @@
                     <navigationItem key="navigationItem" id="49e-a3-npt"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="tableView" destination="KJH-ZO-Qmx" id="bRT-F3-Kaf"/>
+                        <outlet property="tableView" destination="KJH-ZO-Qmx" id="Qao-rf-BOi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
