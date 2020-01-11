@@ -10,7 +10,6 @@
 		826ABE84FE5F3DF9A14B08FA /* Pods_Dodge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AF2217C73BF56803DD43B5 /* Pods_Dodge.framework */; };
 		F4E6FCFE23C999F2005BA113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FCFD23C999F2005BA113 /* AppDelegate.swift */; };
 		F4E6FD0023C999F2005BA113 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FCFF23C999F2005BA113 /* SceneDelegate.swift */; };
-		F4E6FD0223C999F2005BA113 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD0123C999F2005BA113 /* ViewController.swift */; };
 		F4E6FD0523C999F2005BA113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E6FD0323C999F2005BA113 /* Main.storyboard */; };
 		F4E6FD0723C999F5005BA113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E6FD0623C999F5005BA113 /* Assets.xcassets */; };
 		F4E6FD0A23C999F5005BA113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E6FD0823C999F5005BA113 /* LaunchScreen.storyboard */; };
@@ -26,6 +25,8 @@
 		F4E6FD3523C9AC2A005BA113 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD3423C9AC2A005BA113 /* UITableView.swift */; };
 		F4E6FD3723C9AD91005BA113 /* NoticeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD3623C9AD91005BA113 /* NoticeModel.swift */; };
 		F4E6FD3923C9AE12005BA113 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD3823C9AE12005BA113 /* Routes.swift */; };
+		F4E6FD3D23C9AF29005BA113 /* NoticeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD3C23C9AF29005BA113 /* NoticeProtocols.swift */; };
+		F4E6FD3F23C9AFA1005BA113 /* NoticePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6FD3E23C9AFA1005BA113 /* NoticePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +36,6 @@
 		F4E6FCFA23C999F2005BA113 /* Dodge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dodge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E6FCFD23C999F2005BA113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4E6FCFF23C999F2005BA113 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4E6FD0123C999F2005BA113 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4E6FD0423C999F2005BA113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4E6FD0623C999F5005BA113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4E6FD0923C999F5005BA113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +52,8 @@
 		F4E6FD3423C9AC2A005BA113 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		F4E6FD3623C9AD91005BA113 /* NoticeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeModel.swift; sourceTree = "<group>"; };
 		F4E6FD3823C9AE12005BA113 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		F4E6FD3C23C9AF29005BA113 /* NoticeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeProtocols.swift; sourceTree = "<group>"; };
+		F4E6FD3E23C9AFA1005BA113 /* NoticePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +108,6 @@
 			children = (
 				F4E6FD1123C99F00005BA113 /* Utills */,
 				F4E6FD1E23C9AA49005BA113 /* Modules */,
-				F4E6FD0123C999F2005BA113 /* ViewController.swift */,
 				F4E6FD0323C999F2005BA113 /* Main.storyboard */,
 				F4E6FD0B23C999F5005BA113 /* Info.plist */,
 				F4E6FD0823C999F5005BA113 /* LaunchScreen.storyboard */,
@@ -196,6 +197,7 @@
 		F4E6FD2223C9AA9B005BA113 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				F4E6FD3E23C9AFA1005BA113 /* NoticePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -218,6 +220,7 @@
 		F4E6FD2523C9AABE005BA113 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				F4E6FD3C23C9AF29005BA113 /* NoticeProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -355,7 +358,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4E6FD0223C999F2005BA113 /* ViewController.swift in Sources */,
 				F4E6FD3923C9AE12005BA113 /* Routes.swift in Sources */,
 				F4E6FCFE23C999F2005BA113 /* AppDelegate.swift in Sources */,
 				F4E6FD3223C9ABF2005BA113 /* TableBaseViewController.swift in Sources */,
@@ -365,6 +367,8 @@
 				F4E6FD3523C9AC2A005BA113 /* UITableView.swift in Sources */,
 				F4E6FD3023C9ABD0005BA113 /* Register.swift in Sources */,
 				F4E6FD2B23C9AB50005BA113 /* NoticeVC.swift in Sources */,
+				F4E6FD3F23C9AFA1005BA113 /* NoticePresenter.swift in Sources */,
+				F4E6FD3D23C9AF29005BA113 /* NoticeProtocols.swift in Sources */,
 				F4E6FD2E23C9AB90005BA113 /* BaseViewController.swift in Sources */,
 				F4E6FD1823C99FE9005BA113 /* Strings.swift in Sources */,
 				F4E6FD0023C999F2005BA113 /* SceneDelegate.swift in Sources */,
