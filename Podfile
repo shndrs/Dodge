@@ -9,5 +9,6 @@ target 'Dodge' do
   pod 'AlamofireImage'
   pod 'AlamofireObjectMapper'
   pod 'EZProgressHUD', '~> 1.5.3'
+  pod 'SwiftyTabBarTransition'
 
 end
